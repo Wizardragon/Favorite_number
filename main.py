@@ -2,7 +2,6 @@ import sys
 sys.path.insert(1, './tools')
 import math_tools
 import math
-from numba import njit
 
 last_number_1 = 1
 social_numbers_list = []
@@ -140,7 +139,7 @@ def social_numbers_seeker(last_number):
         break
     temporal_list.append(next_number)
     number=next_number    
-@njit
+
 def main ():
 
   prime_number = 0
